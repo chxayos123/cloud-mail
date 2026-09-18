@@ -110,7 +110,7 @@ const srcList = reactive([])
 
 const { t } = useI18n()
 watch(() => accountStore.currentAccountId, () => {
-  handleBack()
+  router.replace({ name: 'email' })
 })
 
 let readRequesting = false
